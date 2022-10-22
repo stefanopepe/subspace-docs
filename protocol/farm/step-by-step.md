@@ -1,4 +1,4 @@
-# 0. Pre-Subspace Installation:
+## 0. Pre-Subspace Installation:
 
 There are a couple of items that you will want to first have set up prior to installing the Subspace software.  This includes making sure that your computer’s OS is fully updated, the hardware is configured for your particular goals, the network is prepared, and you have a proper address for the network.
 
@@ -6,7 +6,7 @@ In order to procure this address, you will need to install the SubWallet (recomm
 
 We will first talk about network setup, and then walk through the steps needed to install, configure, and use a SubWallet (recommended) or Polkadot wallet.
 
-## Port Forwarding:
+### Port Forwarding:
 
 In order to run a node, you will need to have a number of ports forwarded to your computer.  This will help the overall health of the network by allowing others to connect and see your computers.
 
@@ -18,21 +18,29 @@ You will need to forward the following ports to the computer running the Subspac
 
 After you have forwarded ports, you may need to secure your computer against unexpected access via a firewall.  Every OS has a different method of locking down one’s ports and controlling access, and you will need to consult with your computer’s support.  In the example shown below using Ubuntu, we will be using Ubuntu’s “ufw” firewall utility. A well written document on how to use this free utility has been developed by [Digital Ocean.](https://www.digitalocean.com/community/tutorials/how-to-set-up-a-firewall-with-ufw-on-ubuntu-20-04)
 
-## Wallet Installation & Setup
+### Wallet Installation & Setup
 
 Presently there are a number of wallet solutions such as: SubWallet or Polkadot wallet. Only one wallet is required to be used with a Subspace node.
 
-### Wallet  - SubWallet:
+#### Wallet  - SubWallet:
 
 Subwallet is a web based wallet. 
 
 This software is known to work with  [FireFox](https://www.mozilla.org/en-US/firefox/new/), [Chrome](https://www.google.com/chrome/dr/download/), [Brave](https://brave.com/download/) and [MS Edge](https://www.microsoft.com/en-us/edge). If for any reason you are unable to run this software, try a different ( ideally freshly installed ) browser and see if this resolves your issue(s).   
 
-NOTE: If you are planning on using a hardware wallet, such as the Ledger ( for example ), then you will want to use Chrome, as only this browser supports these hardware solutions as of this writing. 
+:::note
+
+If you are planning on using a hardware wallet, such as the Ledger ( for example ), then you will want to use Chrome, as only this browser supports these hardware solutions as of this writing. 
+
+:::
 
 Install: [LINK](https://subwallet.app/)
 
-**NOTE:  Please always double check links against multiple sources.** 
+:::note
+
+Please always double check links against multiple sources.
+
+:::
 
 Upon opening the above link, you will be presented with some choices.  Select the correct version of the software for your browser. In this example, we will be installing within Google Chrome:
 
@@ -65,10 +73,11 @@ If for any reason you close or move away from the active window before completel
 
 
 
+:::note   
 
+There is no ‘double’ checking taking place during this setup. Some web3 wallets have this additional checking mechanism in place to ensure all the words were written down correctly; however, this wallet (as of the writing of this document) assumes that the owner has performed this correctly the first time.
 
-# WARNING SHOULD GO HERE
-NOTE:   There is no ‘double’ checking taking place during this setup. Some web3 wallets have this additional checking mechanism in place to ensure all the words were written down correctly; however, this wallet (as of the writing of this document) assumes that the owner has performed this correctly the first time.
+:::
 
 After writing down your seed ( or secret ) words, select the checkbox stating as much.  Then you can press the button labeled, “ Next Step”.
 
@@ -85,19 +94,31 @@ This wallet allows for you to create any number of individual accounts.
 
 ![image8](/img/step-by-step/image8.png)
 
-### Wallet - Polkadot(.js)
+#### Wallet - Polkadot(.js)
 
-NOTE:  Please skip this part if you’re already installed and set up SubWallet. 
+:::note
+
+Please skip this part if you’re already installed and set up SubWallet. 
+
+:::
 
 This is a web based wallet, and if you are familiar with using MetaMask then you will find that there are many similarities. 
 
 This software is known to work with [FireFox](https://www.mozilla.org/en-US/firefox/new/), [Chrome](https://www.google.com/chrome/dr/download/) and [Brave](https://brave.com/download/).  If for any reason you are unable to run this software, try a different ( ideally freshly installed ) browser and see if this resolves your issue(s).  
 
-NOTE: If you are planning on using a hardware wallet, such as the Ledger ( for example ), then you will want to use Chrome, as only this browser supports these hardware solutions as of this writing. 
+:::note
+
+If you are planning on using a hardware wallet, such as the Ledger ( for example ), then you will want to use Chrome, as only this browser supports these hardware solutions as of this writing. 
+
+:::
 
 Install: [LINK](https://polkadot.js.org/extension/) 
 
-NOTE:  Please always double check links against multiple sources. 
+:::note
+
+Please always double check links against multiple sources. 
+
+:::
 
 Upon opening the above link, you will be presented with some choices.  Select the correct version of the software for your browser. In this example, we will be installing within FireFox:
 
@@ -132,9 +153,11 @@ It is imperative that you never expose these online, and that you store these wo
 
 If for any reason you close or move away from the active window before completely finishing this process, then the wallet will generate a new seed.  It is highly advised that before starting off, prepare your work area so that you can write down your words.
 
-# warning should go here
+:::note
 
-NOTE:   There is no ‘double’ checking taking place during this setup. Some web3 wallets have this additional checking mechanism in place to ensure all the words were written down correctly; however, this wallet (as of the writing of this document) assumes that the owner has performed this correctly the first time.
+There is no ‘double’ checking taking place during this setup. Some web3 wallets have this additional checking mechanism in place to ensure all the words were written down correctly; however, this wallet (as of the writing of this document) assumes that the owner has performed this correctly the first time.
+
+:::
 
 ![image16](/img/step-by-step/image16.png)
 
@@ -153,7 +176,11 @@ This wallet allows for you to create any number of individual accounts.
 
 #### Ledger Integration:
 
-NOTE: Only Chrome/Chromium is supported as of this document’s writing. 
+:::note
+
+Only Chrome/Chromium is supported as of this document’s writing. 
+
+:::
 
 If you would rather use a ledger hardware wallet, instead of a purely software based approach, please first visit the Ledger website to verify the process is up to date:  [LINK](https://support.ledger.com/hc/en-us/articles/360016289919-Polkadot-DOT-?docs=true).  The exact method may have changed, and you may also need to update the Polkadot app for your ledger device.  
 
@@ -165,7 +192,7 @@ Open your ledger device, and launch the Polkadot application.  Then return to th
 
 ![image20](/img/step-by-step/image20.png)
 
-## Account Information
+### Account Information
 
 You now have a Polkadot account, starting with the number 5 (five).  This can then be converted into a Subspace ready address using the following site:
 
@@ -203,7 +230,7 @@ You should now be able to see your Subspace address:
 
 It would be highly advisable to write down or otherwise have on hand this information for later use.
 
-# 1. Running CLI on Windows
+## 1. Running CLI on Windows
 
 Requirements:
 
@@ -225,7 +252,11 @@ First, you need to download two executables - a node and a farmer.
 
 All up-to-date executables are available on the official Subspace github page [LINK](https://github.com/subspace/subspace/releases). 
 
-NOTE:  Please always double check links through multiple sources.
+:::note
+
+Please always double check links through multiple sources.
+
+:::
 
 Please ensure you’re downloading the latest full release version by checking the label next to the name. 
 It should say “Latest”
@@ -336,9 +367,14 @@ sudo  apt  install  wget jq git build-essential pkg-config libssl-dev -y <enter>
 After this software has been procured and installed, download the latest subspace binaries (September 10th snapshot as of this document’s writing)
 
 Download:
-NOTE:  You may wish to first visit the official subspace github for the most up to date information at this: [LINK](https://github.com/subspace/subspace/blob/main/docs/farming.md).  Also, the most up to date releases of the software can be found:  [LINK](https://github.com/subspace/subspace/releases).
 
-NOTE:  Please always double check links through multiple sources.
+:::note
+
+You may wish to first visit the official subspace github for the most up to date information at this: [LINK](https://github.com/subspace/subspace/blob/main/docs/farming.md).  Also, the most up to date releases of the software can be found:  [LINK](https://github.com/subspace/subspace/releases).
+
+Please always double check links through multiple sources.
+
+:::
 
 Create a folder to contain the software:
 
@@ -394,7 +430,11 @@ In the first terminal, starting your Node software:
 
 ```
 
-Note:  “--name “ this can be any name/id of your liking.
+:::note
+
+“--name “ this can be any name/id of your liking.
+
+:::
 
 ![image38](/img/step-by-step/image38.png)
 
@@ -423,7 +463,7 @@ If you go back to the first terminal window, you should begin to see your comput
 
 ![image40](/img/step-by-step/image40.png)
 
-# 3. Explorers
+## 3. Explorers
 
 Account Information:
 
@@ -431,7 +471,11 @@ The following is how one is able to check your account information, such as acco
 
 First open your browser and goto the Farmnet: [Polkadot/Substrate Portal](https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Ffarm-rpc.subspace.network#/explorer/node)
 
-NOTE:  Need to open this explorer on the ‘computer’ running the node and with the Polkadot wallet opened.
+:::note
+
+Need to open this explorer on the ‘computer’ running the node and with the Polkadot wallet opened.
+
+:::
 
 Selecting the Correct Chain:
 
@@ -463,7 +507,11 @@ The following is an external blockchain explorer, and will allow you to confirm 
 
 https://telemetry.polkadot.io/#list/0x332ef6e751e25426e38996c51299dfc53bcd56f40b53dce2b2fc8442ae9c4a74
 
-NOTE:  You will need to sort based on Location and then locate oneself via the city.  A search, as of right now, doesn’t really work well.
+:::note
+
+You will need to sort based on Location and then locate oneself via the city.  A search, as of right now, doesn’t really work well.
+
+:::
 
 4.0 FAQs / Troubleshooting / Additional Resources:
 FAQs:
